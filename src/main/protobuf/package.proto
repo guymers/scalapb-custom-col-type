@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "scalapb/scalapb.proto";
+
+package google;
+
+option (scalapb.options) = {
+  scope: PACKAGE
+  collection_type: "_root_.scala.collection.immutable.Vector"
+};
