@@ -2,6 +2,7 @@
 lazy val root = project.in(file("."))
   .settings(Seq(
     scalaVersion := "2.13.10",
+    resolvers ++= Opts.resolver.sonatypeOssSnapshots,
     libraryDependencies ++= Seq(
       "com.thesamet.scalapb" %% "scalapb-runtime" % scalapb.compiler.Version.scalapbVersion,
       "com.thesamet.scalapb" %% "scalapb-runtime" % scalapb.compiler.Version.scalapbVersion % "protobuf",
